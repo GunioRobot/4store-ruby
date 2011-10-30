@@ -90,7 +90,7 @@ module FourStore
         result.elements.each do |binding|
           key = binding.attributes["name"]
           value = binding.elements[1].text
-          type = binding.elements[1].name 
+          type = binding.elements[1].name
           result_hash[key] = value
         end
         results.push result_hash
